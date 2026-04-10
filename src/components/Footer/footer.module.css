@@ -1,0 +1,12 @@
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-family: var(--font-helvetica);
+    padding: 52px 22px;
+    text-align: left;
+}
+
+.h4, .p {
+    color: var(--color-white);
+    font-family: var(--font-helvetica);
+}

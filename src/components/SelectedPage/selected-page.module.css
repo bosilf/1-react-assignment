@@ -1,0 +1,35 @@
+.selectedPage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 61px 21px 21px 21px;
+}
+
+
+.image {
+    width: 100%;
+}
+
+.image.team {
+    display: none;
+}
+
+.thoughts {
+    background-image: url('../../assets/background.png');
+    background-repeat: repeat;
+}
+
+.text.team {
+    display: none;;
+}
+.text {
+    display: flex;
+    background-color: var(--color-lightbeige);
+    padding: 21px;
+    background-image: none;
+
+}
+
+
+

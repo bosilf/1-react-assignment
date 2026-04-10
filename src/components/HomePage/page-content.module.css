@@ -1,0 +1,42 @@
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    align-items: center;
+}
+
+.heroContainer {
+    flex-grow: 1;
+
+}
+
+.h2 {
+    border-right: solid 1px var(--color-dark);
+    margin: var(--padding-sides);
+    line-height: 1.5;
+}
+
+.about {
+    padding: 0 24px;
+}
+
+.wa {
+    float: left;
+    color: var(--color-mediumbeige);
+    margin: 0 21px 0 0;
+    line-height: 1;
+}
+
+.p:first-of-type {
+    margin-bottom: 18px;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .pageContent {
+        gap: 82px;
+    }
+}

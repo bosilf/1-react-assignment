@@ -1,0 +1,117 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    justify-content: center;
+    padding: 12px;
+    color: inherit;
+    
+}
+
+.team, .thoughts {
+    color: var(--color-dark);
+}
+
+.navItem {
+    /* color: var(--color-dark); */
+    cursor: pointer;
+    font-family: var(--font-helvetica);
+}
+
+.heroNav {
+    background-color: var(--color-white);
+    width: 100%;
+    z-index: 4;
+    border-radius: 20px 20px 0 0;
+    bottom: -1px;
+    padding: 21px 22px;
+    position: absolute;
+}
+
+.heroNavContent {
+    gap: 13px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    max-width: 800px;
+}
+
+.heroNavContent .navItem {
+    background-color: var(--color-dark);
+    border-radius: 50px;
+    border: var(--color-dark) solid 1px;
+    color: var(--color-white);
+    padding: 12px;
+    text-align: center;
+}
+
+.heroNavContent .navItem:first-child {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.secondNav .navItem {
+    align-self: center;
+    background-color: var(--color-mediumbeige);
+    border-radius: 50px;
+    color: var(--color-white);
+    margin-top: 12px;
+    padding: 12px 32px;
+    text-align: center;
+    width: fit-content;
+    transition: all 0.5s;
+
+}
+.secondNav .navItem:hover {
+    background-color: var(--color-dark);
+    transition: all 0.5s;
+
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+        color: var(--color-white);
+
+    }
+
+    .nav.team, .nav.thoughts {
+        color: var(--color-dark);
+    }
+
+
+    .heroNavContent {
+        grid-template-columns: 1fr 1fr 1fr;
+        height: fit-content;
+        left: 0;
+        z-index: 4;
+    }
+
+    .heroNavContent .navItem {
+        background-color: var(--color-dark);
+        border: var(--color-dark) solid 1px;
+        border-radius: 50px;
+        color: var(--color-white);
+        padding: 12px;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .heroNavContent .navItem:hover {
+        background-color: var(--color-mediumbeige);
+        border: var(--color-mediumbeige) solid 1px;
+        transition: all 0.5s;
+    }
+
+    .heroNavContent .navItem:first-child {
+        background-color: var(--color-dark);
+        color: var(--color-white);
+        grid-area: 1 / 1 / span 1 / span 1;
+        transition: all 0.5s;
+    }
+    .heroNavContent .navItem:first-child:hover {
+        background-color: var(--color-mediumbeige);
+        transition: all 0.5s;
+    }
+}

@@ -1,0 +1,55 @@
+.contact {
+    aspect-ratio: 5 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.h2Contact:first-of-type {
+    color: var(--color-mediumbeige);
+}
+
+.teamCards {
+    display: grid;
+    gap: 42px 18px;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr;
+    margin: 32px 0;
+    max-width: 700px;
+}
+
+
+.teamCards.thoughts {
+    display: none;
+}
+
+.card {
+    width: 150px;
+}
+
+.image {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    width: 100%;
+
+} 
+
+@media screen and (min-width: 768px) {
+    .contact {
+        aspect-ratio: 5 / 1;
+    }
+
+    .card {
+        width: 200px;
+    }
+    .teamCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 42px 33px;
+        margin: 32px 0;
+    }
+
+}

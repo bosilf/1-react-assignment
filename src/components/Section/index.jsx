@@ -8,7 +8,7 @@ import { getImageURL } from '../../utils/functions';
 export const Section = () => {
     return (
         <section className={`${styles.section1} ${styles.sectionWidth}`}>
-            <h2 className={styles.h2}>Spetskompetens inom entreprenadjuridik och offentlig upphandling</h2>
+            <h1 className={styles.h2}>Spetskompetens inom entreprenadjuridik och offentlig upphandling</h1>
             <div className={styles.about}>
                 <h3 className={styles.wa}>WA</h3>
                 <p className={styles.p}>Advokatbyrå är inriktad mot bygg- och fastighetsbranschen. Vi har en stor branschkunskap och lång erfarenhet av att hantera allt ifrån de mest komplicerade entreprenadtvisterna och entreprenadavtalen till mindre entreprenader.</p>

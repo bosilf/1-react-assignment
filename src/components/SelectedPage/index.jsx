@@ -12,7 +12,7 @@ const SelectedPage = ({ article, updateFunction }) => {
     
     return (
         <div className={`${styles.selectedPage} ${styles[category]}`}>
-            <h2>{title}</h2>
+            <h1>{title}</h1>
             {image  ?  <img className={`${styles.image} ${styles[category]}`} src={getImageURL(`${image}`)} />
                     :  <img className={styles.image} src={getImageURL('default.png')} />}
             <p className={`${styles.text} ${styles[category]}`}>{text}</p>

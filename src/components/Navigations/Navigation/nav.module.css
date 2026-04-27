@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    justify-content: center;
+    padding: 12px;
+    color: inherit;
+}
+
+.navItem {
+    cursor: pointer;
+    font-family: var(--font-helvetica);
+}
+
+.team, .thoughts {
+    color: var(--color-dark);
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+        color: var(--color-white);
+    }
+
+    .nav.team, .nav.thoughts {
+        color: var(--color-dark);
+    }
+}

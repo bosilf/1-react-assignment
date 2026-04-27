@@ -1,18 +1,14 @@
 import styles from './header.module.css'
-import { MobileMenuTop } from "../MobileMenu"
-import Navigation from '../Navigation'
-
-
+import { MobileMenu } from "../MobileMenu"
+import Navigation from '../Navigations/Navigation'
 
 const Header = ({ category, updateFunction}) => {
-
-
     return (
         <div className={styles.header}>
             <div className={`${styles.headerDesktop} `}>
                 <Navigation updateFunction={ updateFunction } category={category}  />
             </div> 
-            <MobileMenuTop updateFunction={ updateFunction } category={category} />
+            <MobileMenu updateFunction={ updateFunction } category={category} />
         </div>
     )
 }

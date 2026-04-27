@@ -1,0 +1,36 @@
+.sectionWidth {
+    max-width: 900px;
+}
+
+.juridical {
+    background-color: #F0EEE9;
+    height: fit-content;
+    padding: 50px 22px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.juridicalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.category {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 1px;
+    padding: 1px 0;
+}
+
+.content {
+    background-color: #F0EEE9;
+    padding: 18px 0;
+    align-items: center;
+    display: flex;
+    gap: 22px;
+    font-weight: 400;
+}

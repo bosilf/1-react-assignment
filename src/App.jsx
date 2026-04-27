@@ -6,15 +6,15 @@ import HomePage from "./components/HomePage"
 import SelectedPage from './components/SelectedPage'
 
 function App() {
-  const [currentPage, setPageStatus] = useState(false)
+  const [currentPage, setCurrentPage] = useState(false)
 
   return (
     <>
-      <Header updateFunction={ setPageStatus } category={currentPage?.category}/>
+      <Header updateFunction={ setCurrentPage } category={currentPage?.category}/>
       <>
         {!currentPage 
-          ? (<HomePage updateFunction={setPageStatus} />) 
-          : (<SelectedPage article={currentPage} updateFunction={setPageStatus} />)
+          ? (<HomePage updateFunction={setCurrentPage} />) 
+          : (<SelectedPage article={currentPage} updateFunction={setCurrentPage} />)
         }
       </>
       <Footer />

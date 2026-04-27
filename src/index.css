@@ -11,7 +11,6 @@
   --padding-sides: 0 22px;
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -23,15 +22,14 @@ body {
 
 #root {
   font-family: "sherborne-variable", sans-serif;
-  /* font-variation-settings: "opsz" 12, "wght" 250; */
   max-width: 100%;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   overflow-x: hidden;
-
 }
+
 a {
   text-decoration: none;
   color: inherit;

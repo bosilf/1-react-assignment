@@ -1,7 +1,7 @@
 import styles from './hero.module.css'
 import { getImageURL } from '../../utils/functions'
 import SimpleParallax from "simple-parallax-js"
-import { HeroNavigation } from '../Navigation'
+import HeroNavigation  from '../Navigations/HeroNavigation'
 
 
 

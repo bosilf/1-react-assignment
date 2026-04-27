@@ -1,7 +1,9 @@
 .hero {
-    overflow: hidden;    background-color: var(--color-white);
+    background-color: var(--color-white);
     flex-grow: 1;
+    overflow: hidden;    
     overflow: hidden;
+    overflow: hidden;    
     position: relative;
     width: 100%;
 }

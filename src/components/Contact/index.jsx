@@ -1,6 +1,6 @@
 import { contacts } from '../../data/spa-data';
 import { getImageURL } from '../../utils/functions';
-import { TeamNavigation } from '../Navigation'
+import TeamNavigation from '../Navigations/TeamNavigation'
 import styles from './contact.module.css'
 
 

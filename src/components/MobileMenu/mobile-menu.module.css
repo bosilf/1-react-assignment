@@ -1,5 +1,4 @@
 .mobileIcon {
-    /* background-color: white; */
     border-radius: 50px;
     display: none;
     height: 30px;
@@ -9,16 +8,16 @@
 
 .line {
     background-color: white;
-    mix-blend-mode: difference;
     height: 10%;
+    mix-blend-mode: difference;
     transition: all 1s;
     width: 100%;
     z-index: 13;
 }
 
 .line.active {
-    mix-blend-mode: normal;
     background-color: black;
+    mix-blend-mode: normal;
 }
 
 .team, .thoughts {
@@ -26,12 +25,11 @@
 }
 
 .line1 {
-    /* transition: position 1.5s, rotate 1s; */
-    animation: line-move1-again 1s forwards;
+    animation: line1-move-again 1s forwards;
     position: relative;
 }
 
-@keyframes line-move1-again {
+@keyframes line1-move-again {
     from {
         transform: rotate(50deg) translateY(6px) translateX(7.5px);
     }
@@ -46,10 +44,10 @@
 }
 
 .line1.active {
-    animation: line-move1 1s forwards;
+    animation: line1-move 1s forwards;
 }
 
-@keyframes line-move1 {
+@keyframes line1-move {
     from {
         transform: rotatez(0deg) translateY(0%) translateX(0px);
     }
@@ -62,14 +60,13 @@
         transform: rotate(50deg) translateY(6px) translateX(7.5px);
     }
 }
-                
 
 .line2 {
-    animation: line-move2-again 1s forwards;
+    animation: line2-move-again 1s forwards;
 
 }
 
-@keyframes line-move2-again {
+@keyframes line2-move-again {
     from {
         transform: rotate(50deg) translateY(-0.5px) translateX(0px);
     }
@@ -84,10 +81,10 @@
 }
 
 .line2.active {
-    animation: line-move2 1s forwards;
+    animation: line2-move 1s forwards;
 }
 
-@keyframes line-move2 {
+@keyframes line2-move {
     from {
         transform: rotatez(0deg) translateY(0%) translateX(0px);
     }
@@ -102,12 +99,11 @@
 }
 
 .line3 {
-    /* transition: position 1.5s; */
-    animation: line-move3-again 1s forwards;
+    animation: line3-move-again 1s forwards;
 
 }
 
-@keyframes line-move3-again {
+@keyframes line3-move-again {
     from {
         transform: rotate(-50deg) translateY(-7px) translateX(7.5px);
     }
@@ -123,11 +119,11 @@
 
 
 .line3.active {
-    animation: line-move3 1s forwards;
+    animation: line3-move 1s forwards;
 
 }
 
-@keyframes line-move3 {
+@keyframes line3-move {
     from {
         transform: rotatez(0deg) translateY(0px) translateX(0px);
     }
@@ -143,44 +139,6 @@
 
 .mobileIcon.active {
     position: fixed;
-}
-
-/* @keyframes menu-show {
-    from {
-        transform:  translateX(0px);
-    }
-        
-    50% {
-        transform: translateX(0px);
-    }
-            
-    to {
-        transform: translateX(400px);
-    }
-} */
-
-.mobileMenu {
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: 2px -1px 2px rgba(0, 0, 0, 0);
-    display: none;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    left: -55%;
-    position: fixed;
-    top: 0;
-    transition: width 1s, position 1.5s, box-shadow 1s;
-    width: 0%;
-    z-index: 10;
-}
-
-.mobileMenu.active {
-    /* animation: menu-show 1s forwards; */
-    box-shadow: 10px -1px 8px rgba(0, 0, 0, 0.049);
-    display: flex;
-    left: 0;
-    width: 60%;
 }
 
 .mobileMenuTop {
@@ -256,8 +214,3 @@
         display: none;
     }
 }
-
-
-
-
-

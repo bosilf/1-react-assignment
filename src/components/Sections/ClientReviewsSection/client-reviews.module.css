@@ -1,0 +1,47 @@
+.review {
+    background-color: var(--color-dark);
+    box-shadow: inset 0px 1px 20px 20px rgb(0 0 0 / 9%);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    width: 100%;
+}
+
+.reviewText {
+    position: absolute;
+    z-index: 2;
+    padding: var(--padding-sides);
+    margin: 0 0 66px 0;
+}
+
+.reviewTitle, .reviewParagraph {
+    color: var(--color-white);
+    margin: 21px 0;
+}
+
+.reviewQuote {
+    font-size: 80px;
+    float: left;
+    margin: 0 21px 0 0;
+    width: min-content;
+    line-height: 1;
+    color: var(--color-lightbeige);
+}
+
+.image {
+    object-fit: cover;
+    height: 70vh;
+    width: 100%;
+    opacity: 30%;
+
+}
+
+@media screen and (min-width: 768px) {
+    .reviewText {
+        position: absolute;
+        z-index: 2;
+        padding: var(--padding-sides);
+        margin: 0 0 106px 66px;
+    }
+}
